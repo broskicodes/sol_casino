@@ -8,4 +8,8 @@ pub enum CasinoError {
     NumericalOverflow,
     #[msg("Instruction missing required bump")]
     MissingBump,
+    #[msg("Ratio divisor cannot be 0")]
+    InvalidRatioDiv,
+    #[msg("Requested to build deck with too many sets of cards")]
+    TooManyDecks,
 }
